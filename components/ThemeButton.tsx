@@ -16,7 +16,7 @@ export const ThemeButton = () => {
       localStorage.setItem('mxDarkMode', 'false');
     }
   }, [darkMode]);
-  console.log(darkMode);
+
   return (
     <button onClick={() => setDarkMode(!darkMode)}>
       {darkMode ? (

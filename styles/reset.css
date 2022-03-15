@@ -35,7 +35,7 @@ body {
 }
 
 main {
-    @apply h-full text-black dark:text-white;
+    @apply h-full text-black dark:text-white ;
 }
 /*
   Typographic tweaks!
