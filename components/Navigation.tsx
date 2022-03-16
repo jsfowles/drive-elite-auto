@@ -3,8 +3,9 @@ import Image from 'next/image';
 import React from 'react';
 import { ThemeButton } from './ThemeButton';
 import Logo from '../public/Logo';
-
+import { Sling as Hamburger } from 'hamburger-react';
 const Navigation = () => {
+  const [isOpen, setOpen] = React.useState(false);
   return (
     <nav className="h-20 mx-[7vw] max-w-[1440px] w-full flex justify-between items-center">
       <Link href="/" passHref>
@@ -12,7 +13,10 @@ const Navigation = () => {
           <Logo />
         </a>
       </Link>
-      <ul className="flex space-x-4 flex items-center">
+      <div className="md:hidden">
+        <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
+      </div>
+      <ul className="space-x-4 flex items-center hidden md:flex">
         <ThemeButton />
         <li>
           <Link href="/" passHref>
