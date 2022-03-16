@@ -1,7 +1,7 @@
 import Particles from 'react-tsparticles';
 
 const HomeParticles = ({ theme }: any) => {
-  const options = {
+  const options: any = {
     background: {
       color: {
         value: '#000000',
