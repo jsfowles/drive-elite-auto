@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="max-w-[1024px] mx-auto py-16 flex">
           <FooterLogo />
           <div className="h-40 pl-16 text-white pt-2">
-            <h5 className="pb-2">Elite Auto Solutions</h5>
+            <h5 className="pb-2 text-white">Elite Auto Solutions</h5>
             <ul className="h-full  flex flex-col justify-around">
               <li className="flex">
                 <img src="images/footer/location.svg" alt="" />
