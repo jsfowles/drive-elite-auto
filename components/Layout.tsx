@@ -23,7 +23,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header className="w-full flex justify-center">
+    <header className="w-full bg-white dark:bg-black flex justify-center relative">
       <Navigation />
     </header>
     <main className=" w-full mx-auto bg-white dark:bg-black flex justify-center">

@@ -36,7 +36,7 @@ body,
 }
 
 main {
-  @apply text-black dark:text-white flex-1;
+  @apply flex-1;
 }
 
 header {

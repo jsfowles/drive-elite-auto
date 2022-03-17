@@ -9,7 +9,11 @@ module.exports = {
       body: ['Work Sans', 'sans-serif'],
       heading: ['Oswald', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        elite: '#C92D2D',
+      },
+    },
   },
   plugins: [],
 };

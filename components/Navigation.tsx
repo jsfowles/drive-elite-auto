@@ -7,7 +7,7 @@ import { Sling as Hamburger } from 'hamburger-react';
 const Navigation = () => {
   const [isOpen, setOpen] = React.useState(false);
   return (
-    <nav className="border-b border-black h-28 mx-[7vw] max-w-[1024px] w-full flex justify-between items-end pb-4">
+    <nav className="border-b border-black h-28 mx-[7vw] max-w-[1024px] w-full flex justify-between items-end pb-4 relative">
       <div className="md:hidden">
         <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
       </div>
