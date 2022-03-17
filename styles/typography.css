@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-heading uppercase tracking-widest;
+}
+
+p,
+li,
+small {
+  @apply font-body;
+}
+
+p {
+  @apply text-2xl;
+}
+
+h1 {
+  line-height: 100%;
+  font-size: clamp(24px, 10vw, 178px);
+}

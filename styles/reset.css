@@ -5,24 +5,20 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .logo-layer-1 {
-    @apply fill-white dark:fill-black !important;
+  @apply fill-white dark:fill-black !important;
 }
 .logo-layer-2 {
-    @apply fill-black dark:fill-white !important;
+  @apply fill-black dark:fill-white !important;
 }
 /*
   2. Remove default margin
 */
 * {
-    margin: 0;
-}
-
-#__next {
-    @apply h-screen;
+  margin: 0;
 }
 
 /*
@@ -30,12 +26,26 @@
 */
 
 html,
-body {
-    height: 100%;
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    @apply h-full text-black dark:text-white ;
+  @apply text-black dark:text-white flex-1;
+}
+
+header {
+  flex-shrink: 0;
+  z-index: 900;
+}
+footer {
+  flex-shrink: 0;
+  z-index: 900;
 }
 /*
   Typographic tweaks!
@@ -43,11 +53,11 @@ main {
   5. Improve text rendering
 */
 body {
-    line-height: 140%;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Montserrat', sans-serif;
+  line-height: 140%;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
 }
 /*
   6. Improve media defaults
@@ -57,9 +67,9 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
-    height: 100%;
+  display: block;
+  max-width: 100%;
+  height: 100%;
 }
 /*
   7. Remove built-in form typography styles
@@ -68,7 +78,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 /*
   8. Avoid text overflows
@@ -80,17 +90,17 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 /*
   9. Create a root stacking context
 */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }

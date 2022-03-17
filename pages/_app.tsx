@@ -2,12 +2,13 @@ import React from 'react';
 import { AppProps } from 'next/app';
 
 import '../styles/reset.css';
+import '../styles/typography.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className="bg-white dark:bg-black transition-all">
-      <Component {...pageProps} />
-    </main>
+    // <div className="bg-white dark:bg-black transition-all">
+    <Component {...pageProps} />
+    // </div>
   );
 }
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Navigation from './Navigation';
 import { ThemeButton } from './ThemeButton';
+import Footer from './Footer';
 
 type Props = {
   children?: ReactNode;
@@ -10,25 +11,26 @@ type Props = {
 };
 
 const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+  <>
     <Head>
       <title>{title}</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Work+Sans:wght@400;500&display=swap"
         rel="stylesheet"
       />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header className="border-b border-gray-200 dark:border-gray-700 h-full w-full flex justify-center">
+    <header className="w-full flex justify-center">
       <Navigation />
     </header>
-    <section className="w-full mx-auto bg-white dark:bg-black flex justify-center">
-      <div className="mx-[7vw] max-w-[1440px] w-full">{children}</div>
-    </section>
-  </div>
+    <main className=" w-full mx-auto bg-white dark:bg-black flex justify-center">
+      <div className=" max-w-[1000px] mx-[7vw] w-full">{children}</div>
+    </main>
+    <Footer />
+  </>
 );
 
 export default Layout;

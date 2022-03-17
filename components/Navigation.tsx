@@ -7,33 +7,44 @@ import { Sling as Hamburger } from 'hamburger-react';
 const Navigation = () => {
   const [isOpen, setOpen] = React.useState(false);
   return (
-    <nav className="h-20 mx-[7vw] max-w-[1440px] w-full flex justify-between items-center">
-      <Link href="/" passHref>
-        <a className="h-14">
-          <Logo />
-        </a>
-      </Link>
+    <nav className="border-b border-black h-28 mx-[7vw] max-w-[1024px] w-full flex justify-between items-end pb-4">
       <div className="md:hidden">
         <Hamburger toggled={isOpen} toggle={setOpen} size={24} />
       </div>
-      <ul className="space-x-4 flex items-center hidden md:flex">
+      <ul className="space-x-8 flex items-center hidden md:flex">
+        <li>
+          <Link href="/" passHref>
+            <a>
+              <h5 className="hover:border-b hover:-mb-[1px]">About</h5>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/" passHref>
+            <a>
+              <h5>Interior</h5>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/" passHref>
+            <a>
+              <h5>Exterior</h5>
+            </a>
+          </Link>
+        </li>
         <ThemeButton />
-        <li>
-          <Link href="/" passHref>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/" passHref>
-            Interior
-          </Link>
-        </li>
-        <li>
-          <Link href="/" passHref>
-            Exterior
-          </Link>
-        </li>
       </ul>
+      <Link href="/" passHref>
+        <a>
+          <Logo />
+        </a>
+      </Link>
+      <Link href="/" passHref>
+        <a>
+          <h5>Schedule an Appointment</h5>
+        </a>
+      </Link>
     </nav>
   );
 };
