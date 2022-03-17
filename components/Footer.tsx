@@ -3,9 +3,9 @@ import FooterLogo from '../public/images/footer/FooterLogo';
 
 const Footer = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black -translate-y-1/3 ">
       <div className="mx-[7vw]">
-        <div className="max-w-[1024px] mx-auto py-16 flex">
+        <div className="max-w-[1024px] mx-auto py-16 flex border-t border-black dark:border-elite">
           <FooterLogo />
           <div className="h-40 pl-16 text-white pt-2">
             <h5 className="pb-2 text-white">Elite Auto Solutions</h5>

@@ -13,10 +13,14 @@ small {
 }
 
 p {
-  @apply text-2xl;
+  @apply text-2xl leading-10 text-black dark:text-white;
 }
 
 h1 {
   line-height: 100%;
   font-size: clamp(24px, 10vw, 178px);
+}
+
+h2 {
+  font-size: 26px;
 }

@@ -53,7 +53,6 @@ footer {
   5. Improve text rendering
 */
 body {
-  line-height: 140%;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   font-style: normal;
