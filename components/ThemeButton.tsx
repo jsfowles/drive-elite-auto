@@ -20,7 +20,7 @@ export const ThemeButton = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="absolute top-18 -right-20 bg-elite rounded-full w-12 h-12 hover:w-16 hover:h-16 hover:translate-x-2 transition-all flex justify-center items-center"
+      className=" bg-elite -mb-2.5 rounded-full w-12 h-12 hover:scale-110 scale-75 transition-all flex justify-center items-center"
     >
       {darkMode ? (
         <SunIcon className=" h-8 w-8 text-white" />

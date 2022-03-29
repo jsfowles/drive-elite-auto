@@ -6,6 +6,10 @@ h5 {
   @apply text-black dark:text-white font-heading uppercase tracking-widest;
 }
 
+h6 {
+  @apply text-white font-heading uppercase text-2xl;
+}
+
 p,
 li,
 small {
