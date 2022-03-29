@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from '../../public/Logo';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ThemeButton } from '../ThemeButton';
 
 const mobileMenuMotion = {
   open: {
@@ -42,7 +43,7 @@ const NavMenu = ({ setOpen, isOpen }) => {
     >
       <div className="flex justify-between h-28 border-b-elite border-b-2 mx-4 items-end pb-6">
         <Link href="/" passHref>
-          <a className="pl-3">
+          <a className="pl-3" onClick={() => setOpen(false)}>
             <Logo />
           </a>
         </Link>
@@ -63,26 +64,29 @@ const NavMenu = ({ setOpen, isOpen }) => {
       <ul className="space-y-6 mx-4 mt-6">
         <motion.li variants={item}>
           <Link href="/" passHref>
-            <a>
+            <a onClick={() => setOpen(false)}>
               <h6 className="hover:border-b hover:-mb-[1px]">About</h6>
             </a>
           </Link>
         </motion.li>
         <motion.li variants={item}>
           <Link href="/" passHref>
-            <a>
+            <a onClick={() => setOpen(false)}>
               <h6>Interior</h6>
             </a>
           </Link>
         </motion.li>
         <motion.li variants={item}>
           <Link href="/" passHref>
-            <a>
+            <a onClick={() => setOpen(false)}>
               <h6>Exterior</h6>
             </a>
           </Link>
         </motion.li>
       </ul>
+      <div className="ml-4 mt-4">
+        <ThemeButton />
+      </div>
     </motion.div>
   );
 };
