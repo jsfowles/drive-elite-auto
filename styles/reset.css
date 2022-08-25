@@ -32,6 +32,7 @@ body,
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  @apply bg-white dark:bg-black;
 }
 
 main {

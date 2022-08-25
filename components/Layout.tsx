@@ -28,10 +28,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header className="w-full bg-white dark:bg-black flex justify-center relative">
+      <header className="w-full flex bg-white/60 dark:bg-black/60 justify-center fixed backdrop-blur-md">
         {isTabletOrMobile ? <MobileNavigation /> : <DesktopNav />}
       </header>
-      <main className=" w-full mx-auto bg-white dark:bg-black flex justify-center">
+      <main className=" w-full mt-28 mx-auto bg-white dark:bg-black flex justify-center">
         <div className=" max-w-[1000px] mx-[7vw] w-full">{children}</div>
       </main>
       <Footer />

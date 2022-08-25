@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Image from 'next/image';
+
 import Layout from '../components/Layout';
 import Heading from '../components/Heading';
 import CTA from '../components/CTA';
@@ -28,7 +29,13 @@ const AboutPage = () => (
         </p>
       </article>
       <figure className="w-full mb-6 md:mb-24">
-        <img src="/images/about/ben.png" className="w-full object-contain" />
+        <Image
+          height={746}
+          width={498}
+          layout="responsive"
+          src="/images/about/ben.png"
+          className="w-full object-contain"
+        />
       </figure>
       <CTA />
     </section>

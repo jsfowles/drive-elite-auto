@@ -13,8 +13,8 @@ const NAV_ITEMS = [
 
 const DesktopNav = () => {
   return (
-    <nav className="border-b border-black dark:border-elite h-28 mx-[7vw] max-w-[1024px] w-full grid-cols-3 justify-center items-end grid pb-4 relative">
-      <ul className="md:space-x-4 lg:space-x-8 flex hidden md:flex">
+    <nav className="z-50 border-b border-black dark:border-elite h-28 mx-[7vw] max-w-[1024px] w-full grid-cols-3 justify-center items-end grid pb-4 relative">
+      <ul className="md:space-x-4 lg:space-x-8 flex hidden md:flex z-50">
         {NAV_ITEMS.map(({ id, title, route }) => (
           <li key={id}>
             <Link href={route} passHref>

@@ -71,7 +71,7 @@ const INTERIOR_DATA = [
 
 const AboutPage = () => (
   <Layout title="About | Next.js + TypeScript Example">
-    <Heading title="Interiors" className="text-center" />
+    <Heading title="Interiors" />
 
     <div className="max-w-4xl mx-auto lg:max-w-7xl pb-24">
       <p className="max-w-2xl text-2xl mx-auto py-12">
