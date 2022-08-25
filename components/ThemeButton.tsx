@@ -1,5 +1,5 @@
 import React from 'react';
-import { MoonIcon, SunIcon } from '@heroicons/react/solid';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
 
 export const ThemeButton = () => {
   // set to undefined for initial render then use local storage

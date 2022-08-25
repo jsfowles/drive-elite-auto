@@ -4,7 +4,7 @@ const Cta = () => {
   return (
     <div className="bg-elite p-8 text-white w-full md:max-w-[450px]">
       <h2 className="text-white pb-2.5">Let's Work Together</h2>
-      <p className="text-base text-white pb-3.5 w-80">
+      <p className="text-base text-white pb-3.5 max-w-80">
         Have an idea for your ride. Schedule an appointment and let’s make it
         reality.
       </p>

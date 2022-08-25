@@ -3,7 +3,7 @@ import FooterLogo from '../public/images/footer/FooterLogo';
 
 const Footer = () => {
   return (
-    <div className="bg-black mt-36">
+    <div className="bg-black">
       <div className="mx-[7vw]">
         <div className="max-w-[1024px] mx-auto py-16 flex border-t border-black dark:border-elite">
           <FooterLogo />
